@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
         UserInputProvider userInputProvider = new UserInputProvider(new Scanner(System.in));
 
-        CoffeMachine coffeMachine = new CoffeMachine(2,2, userInputProvider);
+        CoffeMachine coffeMachine = new CoffeMachine( userInputProvider);
+
+        coffeMachine.displayMachineStat();
 
         coffeMachine.run();
 
